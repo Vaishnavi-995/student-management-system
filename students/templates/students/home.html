@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="{% static 'students/style.css' %}">
+</head>
+
+<body>
+
+<h1>Student Management System</h1>
+
+<div style="text-align: center; margin-top: 30px;">
+
+    <a href="{% url 'student_list' %}">
+        <button>View Students</button>
+    </a>
+
+    <a href="{% url 'add_student' %}">
+        <button>Add Student</button>
+    </a>
+
+</div>
+
+</body>
+</html>
